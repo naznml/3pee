@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Кәсіби бағытталған ағылшын тілі — 3-нұсқа</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Кәсіби бағытталған ағылшын тілі — 3-нұсқа</title>
+<style>
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -40,17 +41,15 @@
     .hero p { margin: 10px 0 0; opacity: .94; }
     .container { width: min(930px, calc(100% - 24px)); margin: 22px auto 64px; }
     .control-panel {
-      position: sticky;
-      top: 8px;
-      z-index: 10;
+      
+      
       margin-bottom: 20px;
       padding: 14px;
       background: rgba(255,255,255,.94);
       border: 1px solid rgba(15,76,92,.12);
       border-radius: 18px;
       box-shadow: 0 10px 30px rgba(19, 51, 64, .10);
-      backdrop-filter: blur(12px);
-    }
+      }
     .lang-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
     .lang-btn {
       padding: 11px 14px;
@@ -172,1438 +171,1396 @@
     @media (max-width: 600px) {
       .hero { padding-top: 32px; }
       .container { width: min(100% - 16px, 930px); }
-      .control-panel { top: 4px; border-radius: 15px; }
+      .control-panel {border-radius: 15px; }
       .question-card { padding: 16px 13px; border-radius: 15px; }
       .option { padding: 11px; }
     }
   </style>
 </head>
 <body class="lang-kk">
-  <header class="hero">
-    <span class="hero-badge">
-      <span class="kk-text">Жаңа жеке сайт</span>
-      <span class="ru-text">Новый отдельный сайт</span>
-    </span>
-    <h1>Кәсіби бағытталған ағылшын тілі</h1>
-    <p class="kk-text">3-нұсқа • 20 сұрақ • 40 балл</p>
-    <p class="ru-text">Вариант 3 • 20 вопросов • 40 баллов</p>
-  </header>
-
-  <main class="container">
-    <section class="control-panel">
-      <div class="lang-row">
-        <button type="button" class="lang-btn active" id="kkBtn" onclick="setLanguage('kk')">Қазақша</button>
-        <button type="button" class="lang-btn" id="ruBtn" onclick="setLanguage('ru')">Русский</button>
-      </div>
-      <div class="progress-row">
-        <span class="kk-text">Орындалған сұрақтар</span>
-        <span class="ru-text">Выполненные вопросы</span>
-        <span id="progressText">0 / 20</span>
-      </div>
-      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
-      <p class="instruction kk-text">Әр сұрақта бір немесе бірнеше жауап болуы мүмкін. Бір сұрақта үш нұсқадан артық белгіленбейді.</p>
-      <p class="instruction ru-text">В каждом вопросе возможен один или несколько ответов. Можно отметить не более трёх вариантов.</p>
-    </section>
-
-    <form id="quizForm">
-      
-    <section class="question-card" data-question="1" data-correct="D,E">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №1</span>
-          <span class="ru-text">Вопрос №1</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">While technology has made communication easier, it has also reduced the need for</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q1" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">international relations</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q1" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">educational collaboration</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q1" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">political uncertainty</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q1" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">social interaction</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q1" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">interpersonal contact</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q1" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">cultural awareness</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: D) social interaction; E) interpersonal contact</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Технология қарым-қатынасты жеңілдеткенімен, ол әлеуметтік өзара әрекет пен тұлғааралық байланыстың қажеттілігін азайтты.</p>
-          <p><strong>Social interaction</strong> және <strong>interpersonal contact</strong> адамдардың бір-бірімен тікелей әлеуметтік байланысын білдіреді. Цифрлық құралдар кейбір бетпе-бет кездесулерді онлайн қарым-қатынаспен алмастырады.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>social interaction — әлеуметтік өзара әрекет<br>interpersonal contact — тұлғааралық байланыс<br>face-to-face communication — бетпе-бет қарым-қатынас</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 5, 211-бет.</div><div class="source-note ru-text">Книга: Unit 5, страница 211.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: D) social interaction; E) interpersonal contact</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Хотя технологии упростили общение, они также снизили необходимость в социальном взаимодействии и межличностном контакте.</p>
-          <p><strong>Social interaction</strong> и <strong>interpersonal contact</strong> обозначают непосредственное социальное и межличностное общение. Цифровые средства заменяют часть личных встреч онлайн-коммуникацией.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>social interaction — социальное взаимодействие<br>interpersonal contact — межличностный контакт<br>face-to-face communication — личное общение</div>
-          <div class="source-note">Книга: Unit 5, страница 211.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="2" data-correct="B,C,D">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №2</span>
-          <span class="ru-text">Вопрос №2</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">The most popular types of sports in the UK</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q2" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">handball</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q2" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">football</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q2" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">cricket</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q2" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">cycling</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q2" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">pudding and rice</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q2" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">volleyball</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q2" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">race</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: B) football; C) cricket; D) cycling</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Ұлыбританиядағы кең таралған спорт түрлеріне футбол, крикет және велосипед спорты жатады.</p>
-          <p><strong>Football</strong> мен <strong>cricket</strong> Ұлыбританияның ең танымал дәстүрлі спорттарының қатарына кіреді, ал <strong>cycling</strong> те кең таралған спорт және бос уақыт белсенділігі болып саналады.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>football — футбол<br>cricket — крикет<br>cycling — велосипед спорты</div>
-          
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: B) football; C) cricket; D) cycling</p>
-          <p><strong>Перевод вопроса и ответа:</strong> К популярным видам спорта в Великобритании относятся футбол, крикет и велоспорт.</p>
-          <p><strong>Football</strong> и <strong>cricket</strong> относятся к самым известным традиционным видам спорта Великобритании, а <strong>cycling</strong> также является широко распространённым видом спорта и досуга.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>football — футбол<br>cricket — крикет<br>cycling — велоспорт</div>
-          
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="3" data-correct="A">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №3</span>
-          <span class="ru-text">Вопрос №3</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">Cyberbullying is becoming the _________ form of bullying these days</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q3" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">prevalent</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q3" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">widespread</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q3" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">common</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q3" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">private</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q3" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">mutual</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q3" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">privileged</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q3" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">restricted</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: A) prevalent</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Қазіргі кезде кибербуллинг буллингтің басым әрі кең таралған түріне айналып келеді.</p>
-          <p>Бастапқы сөйлемде дәл <strong>prevalent</strong> сөзі қолданылады. Ол «кең таралған, басым» деген мағынаны білдіреді.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>prevalent — кең таралған, басым<br>widespread — кең жайылған<br>common — жиі кездесетін</div>
-          
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: A) prevalent</p>
-          <p><strong>Перевод вопроса и ответа:</strong> В настоящее время кибербуллинг становится преобладающей формой травли.</p>
-          <p>В исходном предложении используется именно слово <strong>prevalent</strong>. Оно означает «распространённый, преобладающий».</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>prevalent — распространённый, преобладающий<br>widespread — широко распространённый<br>common — часто встречающийся</div>
-          
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="4" data-correct="B,D,F">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №4</span>
-          <span class="ru-text">Вопрос №4</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">The _________ level of education is to blame for the poor quality of the workforce</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q4" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">suitable</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q4" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">deficient</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q4" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">scarce</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q4" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">inadequate</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q4" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">acceptable</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q4" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">insufficient</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q4" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">low</span>
-        </label>
-        <label class="option" data-letter="H">
-          <input type="checkbox" name="q4" value="H">
-          <span class="letter">H</span>
-          <span class="option-text">appropriate</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: B) deficient; D) inadequate; F) insufficient</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Жұмыс күшінің сапасының төмен болуына білім деңгейінің жеткіліксіздігі себеп болып отыр.</p>
-          <p><strong>Deficient</strong>, <strong>inadequate</strong> және <strong>insufficient</strong> — талапқа сай емес немесе жеткіліксіз деңгейді білдіретін ең жақын сөздер.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>deficient — жеткіліксіз, кем<br>inadequate — талапқа сай емес<br>insufficient — жеткіліксіз</div>
-          
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: B) deficient; D) inadequate; F) insufficient</p>
-          <p><strong>Перевод вопроса и ответа:</strong> В низком качестве рабочей силы обвиняют недостаточный уровень образования.</p>
-          <p><strong>Deficient</strong>, <strong>inadequate</strong> и <strong>insufficient</strong> — наиболее близкие варианты со значением недостаточного, не соответствующего требованиям уровня.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>deficient — недостаточный, неполноценный<br>inadequate — неадекватный, недостаточный<br>insufficient — недостаточный</div>
-          
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="5" data-correct="C">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №5</span>
-          <span class="ru-text">Вопрос №5</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">Some teens are burning themselves out before they graduate _________ high school</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q5" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">in</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q5" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">—</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q5" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">from</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q5" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">out</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q5" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">with</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q5" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">after</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: C) from</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Кейбір жасөспірімдер жоғары мектепті бітірмей тұрып-ақ өздерін қатты қажытып жібереді.</p>
-          <p>Ағылшын тіліндегі дұрыс тіркес — <strong>graduate from high school</strong>. <strong>From</strong> оқу орнын аяқтауды білдіретін <em>graduate</em> етістігімен қолданылады.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>graduate from — оқу орнын бітіру<br>finish high school — жоғары мектепті аяқтау<br>burn oneself out — өзін қажыту</div>
-          
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: C) from</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Некоторые подростки доводят себя до истощения ещё до окончания старшей школы.</p>
-          <p>Правильное сочетание — <strong>graduate from high school</strong>. Предлог <strong>from</strong> употребляется с глаголом <em>graduate</em>, когда называется оконченное учебное заведение.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>graduate from — окончить учебное заведение<br>finish high school — закончить старшую школу<br>burn oneself out — довести себя до истощения</div>
-          
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="6" data-correct="D">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №6</span>
-          <span class="ru-text">Вопрос №6</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">The United Nations (UN) plays a significant role in</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q6" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">Ignoring global conflicts</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q6" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">Providing military support to member states</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q6" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">Limiting access to international aid</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q6" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">Promoting human rights and social justice</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q6" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">Expanding cultural hegemony</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q6" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">Fostering social and economic inequality</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q6" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">Encouraging political oppression</span>
-        </label>
-        <label class="option" data-letter="H">
-          <input type="checkbox" name="q6" value="H">
-          <span class="letter">H</span>
-          <span class="option-text">Propagating environmental degradation</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: D) Promoting human rights and social justice</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Біріккен Ұлттар Ұйымы адам құқықтары мен әлеуметтік әділеттілікті ілгерілетуде маңызды рөл атқарады.</p>
-          <p>БҰҰ-ның негізгі бағыттарының бірі — адам құқықтарын қорғау, халықаралық ынтымақтастықты дамыту және әлеуметтік әділеттілікті қолдау.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>promote — ілгерілету, қолдау<br>human rights — адам құқықтары<br>social justice — әлеуметтік әділеттілік</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 2, адам құқықтары мен БҰҰ тақырыптары.</div><div class="source-note ru-text">Книга: Unit 2, темы ООН и прав человека.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: D) Promoting human rights and social justice</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Организация Объединённых Наций играет значительную роль в продвижении прав человека и социальной справедливости.</p>
-          <p>Одно из основных направлений деятельности ООН — защита прав человека, развитие международного сотрудничества и поддержка социальной справедливости.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>promote — продвигать, поддерживать<br>human rights — права человека<br>social justice — социальная справедливость</div>
-          <div class="source-note">Книга: Unit 2, темы ООН и прав человека.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="7" data-correct="E,F">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №7</span>
-          <span class="ru-text">Вопрос №7</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">When it comes to negative impact of social media, it can expose your teen to _________, and so much more</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q7" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">prestigious jobs</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q7" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">good education</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q7" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">make a progress</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q7" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">unique opportunities</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q7" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">cyberbullying</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q7" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">online predators</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q7" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">financial funding</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: E) cyberbullying; F) online predators</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Әлеуметтік медианың жағымсыз әсері жасөспірімді кибербуллингке және интернеттегі қаскүнем адамдарға тап қылуы мүмкін.</p>
-          <p><strong>Cyberbullying</strong> және <strong>online predators</strong> — әлеуметтік желідегі жасөспірімдерге төнетін нақты қауіптер.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>cyberbullying — кибербуллинг, интернеттегі қудалау<br>online predators — интернеттегі қаскүнемдер<br>online harassment — онлайн қудалау</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 5, медиа мен технологияның қауіптері.</div><div class="source-note ru-text">Книга: Unit 5, риски медиа и технологий.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: E) cyberbullying; F) online predators</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Негативное воздействие социальных сетей может подвергнуть подростка кибербуллингу и контакту с интернет-хищниками.</p>
-          <p><strong>Cyberbullying</strong> и <strong>online predators</strong> — реальные угрозы, с которыми подростки могут столкнуться в социальных сетях.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>cyberbullying — кибербуллинг, травля в интернете<br>online predators — интернет-хищники<br>online harassment — онлайн-преследование</div>
-          <div class="source-note">Книга: Unit 5, риски медиа и технологий.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="8" data-correct="D,E,F">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №8</span>
-          <span class="ru-text">Вопрос №8</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">The principles of international co-operation based on _________</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q8" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">partnership</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q8" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">implementation</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q8" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">introduction</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q8" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">true partnership</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q8" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">recognition</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q8" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">mutual support</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q8" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">salary</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: D) true partnership; E) recognition; F) mutual support</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Халықаралық ынтымақтастық қағидалары мойындауға, өзара қолдауға және шынайы серіктестікке негізделеді.</p>
-          <p>Кітаптағы тұжырымдамада халықаралық ынтымақтастық <strong>recognition</strong>, <strong>mutual support</strong> және <strong>true partnership</strong> негізінде құрылатыны көрсетілген.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>true partnership — шынайы серіктестік<br>recognition — мойындау<br>mutual support — өзара қолдау<br>solidarity — ынтымақтастық, бірлік</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 3, 124-бет.</div><div class="source-note ru-text">Книга: Unit 3, страница 124.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: D) true partnership; E) recognition; F) mutual support</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Принципы международного сотрудничества основаны на признании, взаимной поддержке и подлинном партнёрстве.</p>
-          <p>В формулировке учебника международное сотрудничество основывается на <strong>recognition</strong>, <strong>mutual support</strong> и <strong>true partnership</strong>.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>true partnership — подлинное партнёрство<br>recognition — признание<br>mutual support — взаимная поддержка<br>solidarity — солидарность</div>
-          <div class="source-note">Книга: Unit 3, страница 124.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="9" data-correct="H">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №9</span>
-          <span class="ru-text">Вопрос №9</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">To maintain continuous progress and ensure high standards in integrated learning, a constructive _________ mechanism is essential</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q9" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">practice</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q9" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">reward</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q9" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">comment</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q9" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">advice</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q9" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">success</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q9" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">criticism</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q9" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">progress</span>
-        </label>
-        <label class="option" data-letter="H">
-          <input type="checkbox" name="q9" value="H">
-          <span class="letter">H</span>
-          <span class="option-text">feedback</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: H) feedback</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Кіріктірілген оқытудағы үздіксіз ілгерілеу мен жоғары сапаны қамтамасыз ету үшін сындарлы кері байланыс тетігі қажет.</p>
-          <p>Дұрыс тұрақты тіркес — <strong>constructive feedback</strong>. Кері байланыс оқу сапасын бағалауға және келесі қадамдарды жақсартуға мүмкіндік береді.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>feedback — кері байланыс<br>constructive response — сындарлы жауап<br>evaluation — бағалау</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 3, 141-бет.</div><div class="source-note ru-text">Книга: Unit 3, страница 141.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: H) feedback</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Для непрерывного прогресса и высоких стандартов интегрированного обучения необходим механизм конструктивной обратной связи.</p>
-          <p>Правильное устойчивое сочетание — <strong>constructive feedback</strong>. Обратная связь позволяет оценивать качество обучения и улучшать дальнейшую работу.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>feedback — обратная связь<br>constructive response — конструктивный отклик<br>evaluation — оценивание</div>
-          <div class="source-note">Книга: Unit 3, страница 141.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="10" data-correct="A">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №10</span>
-          <span class="ru-text">Вопрос №10</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">The followings are potential benefits of educational globalization</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q10" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">Promotion of innovation and creativity in education</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q10" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">Enhancement of cultural exclusivity</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q10" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">Expansion of educational barriers</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q10" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">Preservation of cultural homogeneity</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q10" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">Limitation of cross-cultural understanding</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q10" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">Reinforcement of nationalistic ideologies</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q10" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">Restriction of educational opportunities for non-English speakers</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: A) Promotion of innovation and creativity in education</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Білім берудің жаһандануының ықтимал артықшылықтарының бірі — білімдегі инновация мен шығармашылықты дамыту.</p>
-          <p>Жаһандану білім беру жүйелерінің идеялармен, әдістермен және технологиялармен алмасуына жағдай жасап, инновация мен шығармашылықты ынталандырады.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>innovation — инновация, жаңашылдық<br>creativity — шығармашылық<br>educational development — білім беруді дамыту</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 2–3, жаһандық білім беру тақырыптары.</div><div class="source-note ru-text">Книга: Unit 2–3, темы глобального образования.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: A) Promotion of innovation and creativity in education</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Одно из возможных преимуществ глобализации образования — продвижение инноваций и творчества в образовании.</p>
-          <p>Глобализация позволяет образовательным системам обмениваться идеями, методами и технологиями, стимулируя инновации и творчество.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>innovation — инновация, нововведение<br>creativity — творчество<br>educational development — развитие образования</div>
-          <div class="source-note">Книга: Unit 2–3, темы глобального образования.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="11" data-correct="D">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №11</span>
-          <span class="ru-text">Вопрос №11</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">Someone who has applied for protection in another country but has not yet received a decision on their claim</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q11" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">a citizen</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q11" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">a permanent resident</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q11" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">a lawyer</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q11" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">an asylum seeker</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q11" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">a student</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q11" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">an ambassador</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: D) an asylum seeker</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Басқа елден қорғаныш сұрап, өтініші бойынша әлі шешім алмаған адам — баспана іздеуші.</p>
-          <p><strong>Asylum seeker</strong> — өз елінен қауіпсіздік мақсатында кетіп, басқа мемлекеттен ресми қорғаныш сұраған, бірақ өтініші әлі қаралып жатқан адам.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>asylum seeker — баспана іздеуші<br>applicant for protection — қорғаныш сұраушы<br>seek asylum — баспана сұрау</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 2 және Glossary, 264-бет.</div><div class="source-note ru-text">Книга: Unit 2 и Glossary, страница 264.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: D) an asylum seeker</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Человек, запросивший защиту в другой стране, но ещё не получивший решения по заявлению, — проситель убежища.</p>
-          <p><strong>Asylum seeker</strong> — человек, покинувший свою страну ради безопасности и запросивший официальную защиту в другом государстве, пока его заявление ещё рассматривается.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>asylum seeker — проситель убежища<br>applicant for protection — заявитель на защиту<br>seek asylum — просить убежище</div>
-          <div class="source-note">Книга: Unit 2 и Glossary, страница 264.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="12" data-correct="E,F">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №12</span>
-          <span class="ru-text">Вопрос №12</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">Technology can help students _________ their aim</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q12" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">fail</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q12" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">apply</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q12" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">complete</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q12" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">trust</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q12" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">achieve</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q12" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">accomplish</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q12" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">neglect</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: E) achieve; F) accomplish</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Технология студенттерге мақсаттарына жетуге көмектесе алады.</p>
-          <p><strong>Achieve an aim</strong> және <strong>accomplish an aim</strong> мақсатқа жетуді білдіреді. <strong>Achieve</strong> — ең қалыпты тіркес, ал <strong>accomplish</strong> мағынасы жағынан өте жақын.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>achieve — қол жеткізу<br>accomplish — орындау, жүзеге асыру<br>attain — жету<br>reach a goal — мақсатқа жету</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 5, білім берудегі технология.</div><div class="source-note ru-text">Книга: Unit 5, технологии в образовании.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: E) achieve; F) accomplish</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Технологии могут помочь студентам достичь своей цели.</p>
-          <p><strong>Achieve an aim</strong> и <strong>accomplish an aim</strong> означают достичь цели. <strong>Achieve</strong> — наиболее типичное сочетание, а <strong>accomplish</strong> очень близко по смыслу.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>achieve — достигать<br>accomplish — выполнять, осуществлять<br>attain — достигать<br>reach a goal — достичь цели</div>
-          <div class="source-note">Книга: Unit 5, технологии в образовании.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="13" data-correct="E">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №13</span>
-          <span class="ru-text">Вопрос №13</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">Over time, individuals learn to filter and .... environmental influences</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q13" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">adopt</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q13" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">refuse</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q13" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">dismiss</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q13" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">figure out</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q13" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">interpret</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q13" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">argue</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q13" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">mislead</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: E) interpret</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Уақыт өте келе адамдар қоршаған ортаның ықпалын сүзгіден өткізіп, түсіндіруді үйренеді.</p>
-          <p><strong>Interpret environmental influences</strong> — қоршаған орта ықпалдарының мағынасын түсіну және оларды дұрыс қабылдау. Бұл жерде <strong>filter and interpret</strong> табиғи мағыналық жұп құрайды.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>interpret — түсіндіру, мағынасын ұғыну<br>understand — түсіну<br>make sense of — мағынасын ажырату</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 4, тұлға мен мәдени ортаның ықпалы.</div><div class="source-note ru-text">Книга: Unit 4, влияние культуры и среды на личность.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: E) interpret</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Со временем люди учатся фильтровать и интерпретировать влияние окружающей среды.</p>
-          <p><strong>Interpret environmental influences</strong> означает осмысливать влияние окружающей среды. В данном контексте <strong>filter and interpret</strong> образуют естественную смысловую пару.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>interpret — интерпретировать, истолковывать<br>understand — понимать<br>make sense of — осмысливать</div>
-          <div class="source-note">Книга: Unit 4, влияние культуры и среды на личность.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="14" data-correct="A,B,E">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №14</span>
-          <span class="ru-text">Вопрос №14</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">Globally competent students are able to</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q14" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">connect local issues to global processes</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q14" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">communicate effectively with diverse audiences</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q14" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">avoid international sources of information</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q14" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">reject perspectives different from their own</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q14" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">work effectively toward a common goal</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q14" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">depend on a single cultural viewpoint</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: A) connect local issues to global processes; B) communicate effectively with diverse audiences; E) work effectively toward a common goal</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Жаһандық құзыретті студенттер жергілікті мәселелерді жаһандық үдерістермен байланыстырып, әртүрлі аудиториямен тиімді қарым-қатынас жасап, ортақ мақсатқа бірге жұмыс істей алады.</p>
-          <p>Жаһандық құзыреттілік басқа көзқарастарды түсінуді, жергілікті мен жаһандықтың байланысын көруді және әртүрлі топтармен бірлесіп жұмыс істеуді қамтиды.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>global competence — жаһандық құзыреттілік<br>diverse audiences — әртүрлі аудиториялар<br>common goal — ортақ мақсат<br>interconnectedness — өзара байланыс</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 2, 54–55-беттер.</div><div class="source-note ru-text">Книга: Unit 2, страницы 54–55.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: A) connect local issues to global processes; B) communicate effectively with diverse audiences; E) work effectively toward a common goal</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Глобально компетентные студенты умеют связывать местные вопросы с глобальными процессами, эффективно общаться с разной аудиторией и работать ради общей цели.</p>
-          <p>Глобальная компетентность включает понимание разных точек зрения, умение видеть связь местного и глобального и сотрудничать с различными группами.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>global competence — глобальная компетентность<br>diverse audiences — разнообразная аудитория<br>common goal — общая цель<br>interconnectedness — взаимосвязанность</div>
-          <div class="source-note">Книга: Unit 2, страницы 54–55.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="15" data-correct="D,F">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №15</span>
-          <span class="ru-text">Вопрос №15</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">Globalization impact education by</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q15" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">promoting uniformity and standardization in curricula worldwide</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q15" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">discouraging international collaboration in education</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q15" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">enforcing rigid national educational policies</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q15" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">fostering interconnectedness and adaptability to global trends and developments</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q15" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">limiting access to educational resources and opportunities</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q15" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">facilitating the exchange of ideas, knowledge, and technology across borders</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: D) fostering interconnectedness and adaptability to global trends and developments; F) facilitating the exchange of ideas, knowledge, and technology across borders</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Жаһандану білімге жаһандық үрдістерге бейімделу мен өзара байланысты күшейту және идеялар, білім мен технологиялардың шекарааралық алмасуын жеңілдету арқылы әсер етеді.</p>
-          <p>Жаһандану білім беру мекемелерін өзара байланыстырады және білім, тәжірибе мен технология алмасуын арттырады. Сондықтан D және F білімге әсер етудің нақты оң бағыттарын сипаттайды.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>interconnectedness — өзара байланыс<br>adaptability — бейімделгіштік<br>exchange — алмасу<br>across borders — шекаралар арқылы</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 2–3, 54–55 және 124-беттер.</div><div class="source-note ru-text">Книга: Unit 2–3, страницы 54–55 и 124.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: D) fostering interconnectedness and adaptability to global trends and developments; F) facilitating the exchange of ideas, knowledge, and technology across borders</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Глобализация влияет на образование, усиливая взаимосвязанность и адаптацию к мировым тенденциям, а также облегчая обмен идеями, знаниями и технологиями через границы.</p>
-          <p>Глобализация связывает образовательные учреждения и усиливает обмен знаниями, опытом и технологиями. Поэтому D и F описывают реальные направления её влияния на образование.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>interconnectedness — взаимосвязанность<br>adaptability — адаптивность<br>exchange — обмен<br>across borders — через границы</div>
-          <div class="source-note">Книга: Unit 2–3, страницы 54–55 и 124.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="16" data-correct="D,H">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №16</span>
-          <span class="ru-text">Вопрос №16</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">The Human Rights Council is tasked with strengthening the _________ of human rights</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q16" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">establishment</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q16" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">damage</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q16" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">safety</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q16" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">protection</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q16" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">guard</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q16" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">commitment</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q16" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">colaboration</span>
-        </label>
-        <label class="option" data-letter="H">
-          <input type="checkbox" name="q16" value="H">
-          <span class="letter">H</span>
-          <span class="option-text">promotion</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: D) protection; H) promotion</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Адам құқықтары жөніндегі кеңес адам құқықтарын ілгерілету мен қорғауды күшейтуге міндетті.</p>
-          <p>Ресми тіркес — <strong>the promotion and protection of human rights</strong>. Сондықтан екі сөз де сөйлемнің мазмұнын толық жеткізеді.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>protection — қорғау<br>promotion — ілгерілету, қолдау<br>strengthen — күшейту<br>safeguard — қорғау</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 2, адам құқықтары тақырыбы.</div><div class="source-note ru-text">Книга: Unit 2, тема прав человека.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: D) protection; H) promotion</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Совет по правам человека призван укреплять продвижение и защиту прав человека.</p>
-          <p>Официальная формулировка — <strong>the promotion and protection of human rights</strong>. Поэтому оба слова передают полный смысл выражения.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>protection — защита<br>promotion — продвижение<br>strengthen — укреплять<br>safeguard — охранять</div>
-          <div class="source-note">Книга: Unit 2, тема прав человека.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="17" data-correct="A,D">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №17</span>
-          <span class="ru-text">Вопрос №17</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">When it comes to the development of a child, heredity encompasses _________ passed down from parents to children</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q17" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">traits</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q17" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">money</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q17" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">assets</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q17" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">qualities</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q17" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">condition</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q17" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">will</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: A) traits; D) qualities</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Баланың дамуы тұрғысынан тұқым қуалаушылық ата-анадан балаға берілетін белгілер мен қасиеттерді қамтиды.</p>
-          <p><strong>Traits</strong> — тұқым арқылы берілетін белгілердің дәл атауы. <strong>Qualities</strong> осы контексте адамның қасиеттерін білдіретін жақын ұғым.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>traits — белгілер, қасиеттер<br>qualities — қасиеттер<br>characteristics — сипаттамалар<br>heredity — тұқым қуалаушылық</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 4, 210-бет.</div><div class="source-note ru-text">Книга: Unit 4, страница 210.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: A) traits; D) qualities</p>
-          <p><strong>Перевод вопроса и ответа:</strong> В развитии ребёнка наследственность включает черты и качества, передаваемые от родителей детям.</p>
-          <p><strong>Traits</strong> — точное обозначение наследуемых черт. <strong>Qualities</strong> в этом контексте является близким словом со значением человеческих качеств.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>traits — черты, признаки<br>qualities — качества<br>characteristics — характеристики<br>heredity — наследственность</div>
-          <div class="source-note">Книга: Unit 4, страница 210.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="18" data-correct="E">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №18</span>
-          <span class="ru-text">Вопрос №18</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">In the rapidly changing knowledge economy, workers must constantly acquire new _________</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q18" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">supports</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q18" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">knowledge</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q18" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">assistances</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q18" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">challengs</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q18" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">skills</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q18" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">cleverness</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: E) skills</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Жылдам өзгеретін білім экономикасында қызметкерлер үнемі жаңа дағдыларды меңгеруі керек.</p>
-          <p>Кітаптағы сөйлемнің дәл жалғасы — <strong>acquire new skills</strong>. Кейінгі сөйлемдер де қызметкерлердің дағдыларын өмір бойы жаңартып отыруы керектігін айтады.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>skills — дағдылар<br>competences — құзыреттер<br>abilities — қабілеттер<br>acquire — меңгеру</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 3, 115-бет.</div><div class="source-note ru-text">Книга: Unit 3, страница 115.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: E) skills</p>
-          <p><strong>Перевод вопроса и ответа:</strong> В быстро меняющейся экономике знаний работники должны постоянно приобретать новые навыки.</p>
-          <p>Точное продолжение предложения в учебнике — <strong>acquire new skills</strong>. Далее также говорится, что работникам необходимо обновлять навыки в течение всей жизни.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>skills — навыки<br>competences — компетенции<br>abilities — способности<br>acquire — приобретать</div>
-          <div class="source-note">Книга: Unit 3, страница 115.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="19" data-correct="E">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №19</span>
-          <span class="ru-text">Вопрос №19</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">In many countries, especially in the UK asking someone directly about their income, status, weight, or age is frequently regarded as</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q19" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">polite</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q19" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">normal</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q19" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">applicable</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q19" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">appropriate</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q19" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">rude</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q19" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">usual</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q19" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">adequate</span>
-        </label>
-        <label class="option" data-letter="H">
-          <input type="checkbox" name="q19" value="H">
-          <span class="letter">H</span>
-          <span class="option-text">acceptable</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: E) rude</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Көптеген елдерде, әсіресе Ұлыбританияда, адамның табысы, мәртебесі, салмағы немесе жасы туралы тікелей сұрау әдепсіздік болып саналады.</p>
-          <p><strong>Rude</strong> — әдепсіз, орынсыз және басқа адамның жеке шекарасын елемейтін мінез-құлық. Мұндай сұрақтар жеке өмірге қатысты деп қабылданады.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>rude — әдепсіз, дөрекі<br>impolite — сыпайы емес<br>inappropriate — орынсыз<br>intrusive — жеке өмірге араласатын</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 4, мәдени мінез-құлық пен әдеп тақырыптары.</div><div class="source-note ru-text">Книга: Unit 4, темы культурного поведения и этикета.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: E) rude</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Во многих странах, особенно в Великобритании, прямой вопрос о доходе, статусе, весе или возрасте человека часто считается грубым.</p>
-          <p><strong>Rude</strong> означает грубый, невежливый и нарушающий личные границы. Подобные вопросы воспринимаются как относящиеся к частной жизни.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>rude — грубый, невежливый<br>impolite — невежливый<br>inappropriate — неуместный<br>intrusive — назойливый, вторгающийся в личную жизнь</div>
-          <div class="source-note">Книга: Unit 4, темы культурного поведения и этикета.</div>
-        </div>
-      </div>
-    </section>
-    <section class="question-card" data-question="20" data-correct="A,E">
-      <div class="question-head">
-        <span class="question-number">
-          <span class="kk-text">Сұрақ №20</span>
-          <span class="ru-text">Вопрос №20</span>
-        </span>
-      </div>
-
-      <h2 class="question-text">An internal migration occurs when a person or family</h2>
-
-      <div class="options">
-        <label class="option" data-letter="A">
-          <input type="checkbox" name="q20" value="A">
-          <span class="letter">A</span>
-          <span class="option-text">relocates within the same country</span>
-        </label>
-        <label class="option" data-letter="B">
-          <input type="checkbox" name="q20" value="B">
-          <span class="letter">B</span>
-          <span class="option-text">commutes from one city to another for employment</span>
-        </label>
-        <label class="option" data-letter="C">
-          <input type="checkbox" name="q20" value="C">
-          <span class="letter">C</span>
-          <span class="option-text">crosses international borders</span>
-        </label>
-        <label class="option" data-letter="D">
-          <input type="checkbox" name="q20" value="D">
-          <span class="letter">D</span>
-          <span class="option-text">seeks asylum in a neighboring country</span>
-        </label>
-        <label class="option" data-letter="E">
-          <input type="checkbox" name="q20" value="E">
-          <span class="letter">E</span>
-          <span class="option-text">moves to a different state within their country for a better climate</span>
-        </label>
-        <label class="option" data-letter="F">
-          <input type="checkbox" name="q20" value="F">
-          <span class="letter">F</span>
-          <span class="option-text">moves from country to another</span>
-        </label>
-        <label class="option" data-letter="G">
-          <input type="checkbox" name="q20" value="G">
-          <span class="letter">G</span>
-          <span class="option-text">studies in a foreign country for their entire degree program</span>
-        </label>
-      </div>
-
-      <div class="explanation">
-        <div class="kk-text">
-          <h3>Түсіндірме</h3>
-          <p class="correct-line">Дұрыс жауап: A) relocates within the same country; E) moves to a different state within their country for a better climate</p>
-          <p><strong>Сұрақ пен жауаптың аудармасы:</strong> Ішкі көші-қон адам немесе отбасы бір елдің ішінде басқа жерге, соның ішінде басқа аймаққа не штатқа көшкен кезде болады.</p>
-          <p><strong>Internal migration</strong> мемлекеттік шекараны кесіп өтпей, бір елдің ішіндегі тұрақты немесе ұзақ мерзімді қоныс аударуды білдіреді. E — осы анықтаманың нақты мысалы.</p>
-          <div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br>internal migration — ішкі көші-қон<br>relocate — қоныс аудару<br>domestic migration — ел ішіндегі көші-қон<br>move within a country — ел ішінде көшу</div>
-          
-          <div class="source-note kk-text">Кітап: Unit 2, 70–78-беттер.</div><div class="source-note ru-text">Книга: Unit 2, страницы 70–78.</div>
-        </div>
-
-        <div class="ru-text">
-          <h3>Объяснение</h3>
-          <p class="correct-line">Правильный ответ: A) relocates within the same country; E) moves to a different state within their country for a better climate</p>
-          <p><strong>Перевод вопроса и ответа:</strong> Внутренняя миграция происходит, когда человек или семья переезжает в пределах одной страны, в том числе в другой регион или штат.</p>
-          <p><strong>Internal migration</strong> означает постоянное или длительное переселение внутри одной страны без пересечения государственной границы. Вариант E — конкретный пример такого перемещения.</p>
-          <div class="synonyms"><strong>Близкие слова и понятия:</strong><br>internal migration — внутренняя миграция<br>relocate — переселяться<br>domestic migration — миграция внутри страны<br>move within a country — переехать в пределах страны</div>
-          <div class="source-note">Книга: Unit 2, страницы 70–78.</div>
-        </div>
-      </div>
-    </section>
-
-      <div class="actions">
-        <button type="button" class="action-btn check-btn" onclick="showResults()">
-          <span class="kk-text">Нәтижені көрсету</span>
-          <span class="ru-text">Show results</span>
-        </button>
-        <button type="button" class="action-btn reset-btn" onclick="resetQuiz()">
-          <span class="kk-text">Қайта бастау</span>
-          <span class="ru-text">Начать заново</span>
-        </button>
-      </div>
-
-      <section class="result" id="finalResult">
-        <div class="score">
-          <div>
-            <strong id="scoreNumber">0 / 40</strong>
-            <span class="kk-text">Жалпы балл</span>
-            <span class="ru-text">Общий балл</span>
-          </div>
-        </div>
-        <h2 class="kk-text" id="resultTitleKk"></h2>
-        <h2 class="ru-text" id="resultTitleRu"></h2>
-        <p class="kk-text" id="correctCountKk"></p>
-        <p class="ru-text" id="correctCountRu"></p>
-        <p class="kk-text" id="messageKk"></p>
-        <p class="ru-text" id="messageRu"></p>
-      </section>
-    </form>
-  </main>
-
-  <script>
+<header class="hero">
+<span class="hero-badge">
+<span class="kk-text">Жаңа жеке сайт</span>
+<span class="ru-text">Новый отдельный сайт</span>
+</span>
+<h1>Кәсіби бағытталған ағылшын тілі</h1>
+<p class="kk-text">3-нұсқа • 20 сұрақ • 40 балл</p>
+<p class="ru-text">Вариант 3 • 20 вопросов • 40 баллов</p>
+</header>
+<main class="container">
+<section class="control-panel">
+<div class="lang-row">
+<button class="lang-btn active" id="kkBtn" onclick="setLanguage('kk')" type="button">Қазақша</button>
+<button class="lang-btn" id="ruBtn" onclick="setLanguage('ru')" type="button">Русский</button>
+</div>
+<div class="progress-row">
+<span class="kk-text">Орындалған сұрақтар</span>
+<span class="ru-text">Выполненные вопросы</span>
+<span id="progressText">0 / 20</span>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+<p class="instruction kk-text">Әр сұрақта бір немесе бірнеше жауап болуы мүмкін. Бір сұрақта үш нұсқадан артық белгіленбейді.</p>
+<p class="instruction ru-text">В каждом вопросе возможен один или несколько ответов. Можно отметить не более трёх вариантов.</p>
+</section>
+<form id="quizForm">
+<section class="question-card" data-correct="D,E" data-question="1">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №1</span>
+<span class="ru-text">Вопрос №1</span>
+</span>
+</div>
+<h2 class="question-text">While technology has made communication easier, it has also reduced the need for</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q1" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">international relations</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q1" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">educational collaboration</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q1" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">political uncertainty</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q1" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">social interaction</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q1" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">interpersonal contact</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q1" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">cultural awareness</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: D) social interaction; E) interpersonal contact</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Технология қарым-қатынасты жеңілдеткенімен, ол әлеуметтік өзара әрекет пен тұлғааралық байланыстың қажеттілігін азайтты.</p>
+<p><strong>Social interaction</strong> және <strong>interpersonal contact</strong> адамдардың бір-бірімен тікелей әлеуметтік байланысын білдіреді. Цифрлық құралдар кейбір бетпе-бет кездесулерді онлайн қарым-қатынаспен алмастырады.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>social interaction — әлеуметтік өзара әрекет<br/>interpersonal contact — тұлғааралық байланыс<br/>face-to-face communication — бетпе-бет қарым-қатынас</div>
+<div class="source-note kk-text">Кітап: Unit 5, 211-бет.</div><div class="source-note ru-text">Книга: Unit 5, страница 211.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: D) social interaction; E) interpersonal contact</p>
+<p><strong>Перевод вопроса и ответа:</strong> Хотя технологии упростили общение, они также снизили необходимость в социальном взаимодействии и межличностном контакте.</p>
+<p><strong>Social interaction</strong> и <strong>interpersonal contact</strong> обозначают непосредственное социальное и межличностное общение. Цифровые средства заменяют часть личных встреч онлайн-коммуникацией.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>social interaction — социальное взаимодействие<br/>interpersonal contact — межличностный контакт<br/>face-to-face communication — личное общение</div>
+<div class="source-note">Книга: Unit 5, страница 211.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="B,C" data-question="2">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №2</span>
+<span class="ru-text">Вопрос №2</span>
+</span>
+</div>
+<h2 class="question-text">The most popular types of sports in the UK</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q2" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">handball</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q2" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">football</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q2" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">cricket</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q2" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">cycling</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q2" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">pudding and rice</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q2" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">volleyball</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q2" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">race</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауаптар: B) football; C) cricket</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Ұлыбританиядағы ең танымал спорт түрлері — футбол мен крикет.</p>
+<p><strong>Football</strong> және <strong>cricket</strong> Ұлыбританияның ең танымал әрі дәстүрлі спорт түрлеріне жатады.</p>
+<div class="synonyms">
+<strong>Жақын сөздер мен ұғымдар:</strong><br/>
+      football — футбол<br/>
+      cricket — крикет<br/>
+      popular sport — танымал спорт түрі<br/>
+      national sport — ұлттық спорт
+    </div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильные ответы: B) football; C) cricket</p>
+<p><strong>Перевод вопроса и ответа:</strong> Самые популярные виды спорта в Великобритании — футбол и крикет.</p>
+<p><strong>Football</strong> и <strong>cricket</strong> относятся к самым популярным и традиционным видам спорта Великобритании.</p>
+<div class="synonyms">
+<strong>Близкие слова и понятия:</strong><br/>
+      football — футбол<br/>
+      cricket — крикет<br/>
+      popular sport — популярный вид спорта<br/>
+      national sport — национальный вид спорта
+    </div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="A,B,C" data-question="3">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №3</span>
+<span class="ru-text">Вопрос №3</span>
+</span>
+</div>
+<h2 class="question-text">Cyberbullying is becoming the _________ form of bullying these days</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q3" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">prevalent</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q3" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">widespread</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q3" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">common</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q3" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">private</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q3" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">mutual</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q3" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">privileged</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q3" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">restricted</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауаптар: A) prevalent; B) widespread; C) common</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Қазіргі кезде кибербуллинг буллингтің кең таралған түріне айналып келеді.</p>
+<p><strong>Prevalent</strong>, <strong>widespread</strong> және <strong>common</strong> бұл сөйлемде «кең таралған, жиі кездесетін» деген жақын мағыналарды береді.</p>
+<div class="synonyms">
+<strong>Жақын синонимдер:</strong><br/>
+      prevalent — басым, кең таралған<br/>
+      widespread — кең жайылған<br/>
+      common — жиі кездесетін<br/>
+      frequent — жиі болатын
+    </div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильные ответы: A) prevalent; B) widespread; C) common</p>
+<p><strong>Перевод вопроса и ответа:</strong> В настоящее время кибербуллинг становится распространённой формой травли.</p>
+<p><strong>Prevalent</strong>, <strong>widespread</strong> и <strong>common</strong> передают близкое значение: «распространённый, часто встречающийся».</p>
+<div class="synonyms">
+<strong>Близкие синонимы:</strong><br/>
+      prevalent — преобладающий, распространённый<br/>
+      widespread — широко распространённый<br/>
+      common — часто встречающийся<br/>
+      frequent — частый
+    </div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="D,F,G" data-question="4">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №4</span>
+<span class="ru-text">Вопрос №4</span>
+</span>
+</div>
+<h2 class="question-text">The _________ level of education is to blame for the poor quality of the workforce</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q4" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">suitable</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q4" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">deficient</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q4" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">scarce</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q4" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">inadequate</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q4" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">acceptable</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q4" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">insufficient</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q4" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">low</span>
+</label>
+<label class="option" data-letter="H">
+<input name="q4" type="checkbox" value="H"/>
+<span class="letter">H</span>
+<span class="option-text">appropriate</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауаптар: D) inadequate; F) insufficient; G) low</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Жұмыс күшінің сапасының төмен болуына білім деңгейінің жеткіліксіз әрі төмен болуы себеп.</p>
+<p><strong>Inadequate</strong> және <strong>insufficient</strong> талапқа сай емес, жеткіліксіз деңгейді білдіреді. <strong>Low level of education</strong> — ағылшын тіліндегі қалыпты тіркес.</p>
+<div class="synonyms">
+<strong>Жақын синонимдер:</strong><br/>
+      inadequate — талапқа сай емес, жеткіліксіз<br/>
+      insufficient — жеткіліксіз<br/>
+      low — төмен<br/>
+      poor — нашар, төмен сапалы
+    </div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильные ответы: D) inadequate; F) insufficient; G) low</p>
+<p><strong>Перевод вопроса и ответа:</strong> В низком качестве рабочей силы обвиняют недостаточный и низкий уровень образования.</p>
+<p><strong>Inadequate</strong> и <strong>insufficient</strong> обозначают недостаточный уровень. <strong>Low level of education</strong> — естественное английское сочетание.</p>
+<div class="synonyms">
+<strong>Близкие синонимы:</strong><br/>
+      inadequate — недостаточный, несоответствующий<br/>
+      insufficient — недостаточный<br/>
+      low — низкий<br/>
+      poor — слабый, низкого качества
+    </div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="C" data-question="5">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №5</span>
+<span class="ru-text">Вопрос №5</span>
+</span>
+</div>
+<h2 class="question-text">Some teens are burning themselves out before they graduate _________ high school</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q5" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">in</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q5" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">—</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q5" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">from</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q5" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">out</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q5" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">with</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q5" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">after</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: C) from</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Кейбір жасөспірімдер жоғары мектепті бітірмей тұрып-ақ өздерін қатты қажытып жібереді.</p>
+<p>Ағылшын тіліндегі дұрыс тіркес — <strong>graduate from high school</strong>. <strong>From</strong> оқу орнын аяқтауды білдіретін <em>graduate</em> етістігімен қолданылады.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>graduate from — оқу орнын бітіру<br/>finish high school — жоғары мектепті аяқтау<br/>burn oneself out — өзін қажыту</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: C) from</p>
+<p><strong>Перевод вопроса и ответа:</strong> Некоторые подростки доводят себя до истощения ещё до окончания старшей школы.</p>
+<p>Правильное сочетание — <strong>graduate from high school</strong>. Предлог <strong>from</strong> употребляется с глаголом <em>graduate</em>, когда называется оконченное учебное заведение.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>graduate from — окончить учебное заведение<br/>finish high school — закончить старшую школу<br/>burn oneself out — довести себя до истощения</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="D" data-question="6">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №6</span>
+<span class="ru-text">Вопрос №6</span>
+</span>
+</div>
+<h2 class="question-text">The United Nations (UN) plays a significant role in</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q6" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">Ignoring global conflicts</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q6" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">Providing military support to member states</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q6" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">Limiting access to international aid</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q6" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">Promoting human rights and social justice</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q6" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">Expanding cultural hegemony</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q6" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">Fostering social and economic inequality</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q6" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">Encouraging political oppression</span>
+</label>
+<label class="option" data-letter="H">
+<input name="q6" type="checkbox" value="H"/>
+<span class="letter">H</span>
+<span class="option-text">Propagating environmental degradation</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: D) Promoting human rights and social justice</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Біріккен Ұлттар Ұйымы адам құқықтары мен әлеуметтік әділеттілікті ілгерілетуде маңызды рөл атқарады.</p>
+<p>БҰҰ-ның негізгі бағыттарының бірі — адам құқықтарын қорғау, халықаралық ынтымақтастықты дамыту және әлеуметтік әділеттілікті қолдау.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>promote — ілгерілету, қолдау<br/>human rights — адам құқықтары<br/>social justice — әлеуметтік әділеттілік</div>
+<div class="source-note kk-text">Кітап: Unit 2, адам құқықтары мен БҰҰ тақырыптары.</div><div class="source-note ru-text">Книга: Unit 2, темы ООН и прав человека.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: D) Promoting human rights and social justice</p>
+<p><strong>Перевод вопроса и ответа:</strong> Организация Объединённых Наций играет значительную роль в продвижении прав человека и социальной справедливости.</p>
+<p>Одно из основных направлений деятельности ООН — защита прав человека, развитие международного сотрудничества и поддержка социальной справедливости.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>promote — продвигать, поддерживать<br/>human rights — права человека<br/>social justice — социальная справедливость</div>
+<div class="source-note">Книга: Unit 2, темы ООН и прав человека.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="E,F" data-question="7">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №7</span>
+<span class="ru-text">Вопрос №7</span>
+</span>
+</div>
+<h2 class="question-text">When it comes to negative impact of social media, it can expose your teen to _________, and so much more</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q7" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">prestigious jobs</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q7" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">good education</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q7" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">make a progress</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q7" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">unique opportunities</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q7" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">cyberbullying</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q7" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">online predators</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q7" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">financial funding</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: E) cyberbullying; F) online predators</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Әлеуметтік медианың жағымсыз әсері жасөспірімді кибербуллингке және интернеттегі қаскүнем адамдарға тап қылуы мүмкін.</p>
+<p><strong>Cyberbullying</strong> және <strong>online predators</strong> — әлеуметтік желідегі жасөспірімдерге төнетін нақты қауіптер.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>cyberbullying — кибербуллинг, интернеттегі қудалау<br/>online predators — интернеттегі қаскүнемдер<br/>online harassment — онлайн қудалау</div>
+<div class="source-note kk-text">Кітап: Unit 5, медиа мен технологияның қауіптері.</div><div class="source-note ru-text">Книга: Unit 5, риски медиа и технологий.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: E) cyberbullying; F) online predators</p>
+<p><strong>Перевод вопроса и ответа:</strong> Негативное воздействие социальных сетей может подвергнуть подростка кибербуллингу и контакту с интернет-хищниками.</p>
+<p><strong>Cyberbullying</strong> и <strong>online predators</strong> — реальные угрозы, с которыми подростки могут столкнуться в социальных сетях.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>cyberbullying — кибербуллинг, травля в интернете<br/>online predators — интернет-хищники<br/>online harassment — онлайн-преследование</div>
+<div class="source-note">Книга: Unit 5, риски медиа и технологий.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="D,E,F" data-question="8">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №8</span>
+<span class="ru-text">Вопрос №8</span>
+</span>
+</div>
+<h2 class="question-text">The principles of international co-operation based on _________</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q8" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">partnership</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q8" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">implementation</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q8" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">introduction</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q8" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">true partnership</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q8" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">recognition</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q8" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">mutual support</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q8" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">salary</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: D) true partnership; E) recognition; F) mutual support</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Халықаралық ынтымақтастық қағидалары мойындауға, өзара қолдауға және шынайы серіктестікке негізделеді.</p>
+<p>Кітаптағы тұжырымдамада халықаралық ынтымақтастық <strong>recognition</strong>, <strong>mutual support</strong> және <strong>true partnership</strong> негізінде құрылатыны көрсетілген.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>true partnership — шынайы серіктестік<br/>recognition — мойындау<br/>mutual support — өзара қолдау<br/>solidarity — ынтымақтастық, бірлік</div>
+<div class="source-note kk-text">Кітап: Unit 3, 124-бет.</div><div class="source-note ru-text">Книга: Unit 3, страница 124.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: D) true partnership; E) recognition; F) mutual support</p>
+<p><strong>Перевод вопроса и ответа:</strong> Принципы международного сотрудничества основаны на признании, взаимной поддержке и подлинном партнёрстве.</p>
+<p>В формулировке учебника международное сотрудничество основывается на <strong>recognition</strong>, <strong>mutual support</strong> и <strong>true partnership</strong>.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>true partnership — подлинное партнёрство<br/>recognition — признание<br/>mutual support — взаимная поддержка<br/>solidarity — солидарность</div>
+<div class="source-note">Книга: Unit 3, страница 124.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="H" data-question="9">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №9</span>
+<span class="ru-text">Вопрос №9</span>
+</span>
+</div>
+<h2 class="question-text">To maintain continuous progress and ensure high standards in integrated learning, a constructive _________ mechanism is essential</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q9" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">practice</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q9" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">reward</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q9" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">comment</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q9" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">advice</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q9" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">success</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q9" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">criticism</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q9" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">progress</span>
+</label>
+<label class="option" data-letter="H">
+<input name="q9" type="checkbox" value="H"/>
+<span class="letter">H</span>
+<span class="option-text">feedback</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: H) feedback</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Кіріктірілген оқытудағы үздіксіз ілгерілеу мен жоғары сапаны қамтамасыз ету үшін сындарлы кері байланыс тетігі қажет.</p>
+<p>Дұрыс тұрақты тіркес — <strong>constructive feedback</strong>. Кері байланыс оқу сапасын бағалауға және келесі қадамдарды жақсартуға мүмкіндік береді.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>feedback — кері байланыс<br/>constructive response — сындарлы жауап<br/>evaluation — бағалау</div>
+<div class="source-note kk-text">Кітап: Unit 3, 141-бет.</div><div class="source-note ru-text">Книга: Unit 3, страница 141.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: H) feedback</p>
+<p><strong>Перевод вопроса и ответа:</strong> Для непрерывного прогресса и высоких стандартов интегрированного обучения необходим механизм конструктивной обратной связи.</p>
+<p>Правильное устойчивое сочетание — <strong>constructive feedback</strong>. Обратная связь позволяет оценивать качество обучения и улучшать дальнейшую работу.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>feedback — обратная связь<br/>constructive response — конструктивный отклик<br/>evaluation — оценивание</div>
+<div class="source-note">Книга: Unit 3, страница 141.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="A,D" data-question="10">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №10</span>
+<span class="ru-text">Вопрос №10</span>
+</span>
+</div>
+<h2 class="question-text">The followings are potential benefits of educational globalization</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q10" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">Promotion of innovation and creativity in education</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q10" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">Enhancement of cultural exclusivity</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q10" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">Expansion of educational barriers</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q10" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">Preservation of cultural homogeneity</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q10" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">Limitation of cross-cultural understanding</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q10" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">Reinforcement of nationalistic ideologies</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q10" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">Restriction of educational opportunities for non-English speakers</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауаптар: A) Promotion of innovation and creativity in education; D) Preservation of cultural homogeneity</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Білім берудің жаһандануы инновация мен шығармашылықты дамытуға және ортақ мәдени-білім беру негіздерін сақтауға ықпал етуі мүмкін.</p>
+<p>Жаһандану жаңа идеялар мен әдістердің таралуын жылдамдатады. Сонымен қатар ортақ білім беру кеңістігі мәдени және білім беру үлгілерінің бірізділігін сақтауға әсер етуі мүмкін.</p>
+<div class="synonyms">
+<strong>Жақын сөздер мен ұғымдар:</strong><br/>
+      innovation — жаңашылдық<br/>
+      creativity — шығармашылық<br/>
+      preservation — сақтау<br/>
+      homogeneity — біртектілік, бірізділік
+    </div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильные ответы: A) Promotion of innovation and creativity in education; D) Preservation of cultural homogeneity</p>
+<p><strong>Перевод вопроса и ответа:</strong> Глобализация образования может способствовать развитию инноваций и творчества, а также сохранению общих культурно-образовательных основ.</p>
+<p>Глобализация ускоряет распространение новых идей и методов. Одновременно единое образовательное пространство может поддерживать определённую культурную и образовательную однородность.</p>
+<div class="synonyms">
+<strong>Близкие слова и понятия:</strong><br/>
+      innovation — инновация<br/>
+      creativity — творчество<br/>
+      preservation — сохранение<br/>
+      homogeneity — однородность, единообразие
+    </div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="D" data-question="11">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №11</span>
+<span class="ru-text">Вопрос №11</span>
+</span>
+</div>
+<h2 class="question-text">Someone who has applied for protection in another country but has not yet received a decision on their claim</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q11" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">a citizen</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q11" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">a permanent resident</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q11" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">a lawyer</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q11" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">an asylum seeker</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q11" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">a student</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q11" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">an ambassador</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: D) an asylum seeker</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Басқа елден қорғаныш сұрап, өтініші бойынша әлі шешім алмаған адам — баспана іздеуші.</p>
+<p><strong>Asylum seeker</strong> — өз елінен қауіпсіздік мақсатында кетіп, басқа мемлекеттен ресми қорғаныш сұраған, бірақ өтініші әлі қаралып жатқан адам.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>asylum seeker — баспана іздеуші<br/>applicant for protection — қорғаныш сұраушы<br/>seek asylum — баспана сұрау</div>
+<div class="source-note kk-text">Кітап: Unit 2 және Glossary, 264-бет.</div><div class="source-note ru-text">Книга: Unit 2 и Glossary, страница 264.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: D) an asylum seeker</p>
+<p><strong>Перевод вопроса и ответа:</strong> Человек, запросивший защиту в другой стране, но ещё не получивший решения по заявлению, — проситель убежища.</p>
+<p><strong>Asylum seeker</strong> — человек, покинувший свою страну ради безопасности и запросивший официальную защиту в другом государстве, пока его заявление ещё рассматривается.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>asylum seeker — проситель убежища<br/>applicant for protection — заявитель на защиту<br/>seek asylum — просить убежище</div>
+<div class="source-note">Книга: Unit 2 и Glossary, страница 264.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="E,F" data-question="12">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №12</span>
+<span class="ru-text">Вопрос №12</span>
+</span>
+</div>
+<h2 class="question-text">Technology can help students _________ their aim</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q12" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">fail</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q12" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">apply</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q12" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">complete</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q12" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">trust</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q12" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">achieve</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q12" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">accomplish</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q12" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">neglect</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: E) achieve; F) accomplish</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Технология студенттерге мақсаттарына жетуге көмектесе алады.</p>
+<p><strong>Achieve an aim</strong> және <strong>accomplish an aim</strong> мақсатқа жетуді білдіреді. <strong>Achieve</strong> — ең қалыпты тіркес, ал <strong>accomplish</strong> мағынасы жағынан өте жақын.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>achieve — қол жеткізу<br/>accomplish — орындау, жүзеге асыру<br/>attain — жету<br/>reach a goal — мақсатқа жету</div>
+<div class="source-note kk-text">Кітап: Unit 5, білім берудегі технология.</div><div class="source-note ru-text">Книга: Unit 5, технологии в образовании.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: E) achieve; F) accomplish</p>
+<p><strong>Перевод вопроса и ответа:</strong> Технологии могут помочь студентам достичь своей цели.</p>
+<p><strong>Achieve an aim</strong> и <strong>accomplish an aim</strong> означают достичь цели. <strong>Achieve</strong> — наиболее типичное сочетание, а <strong>accomplish</strong> очень близко по смыслу.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>achieve — достигать<br/>accomplish — выполнять, осуществлять<br/>attain — достигать<br/>reach a goal — достичь цели</div>
+<div class="source-note">Книга: Unit 5, технологии в образовании.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="D,E" data-question="13">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №13</span>
+<span class="ru-text">Вопрос №13</span>
+</span>
+</div>
+<h2 class="question-text">Over time, individuals learn to filter and .... environmental influences</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q13" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">adopt</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q13" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">refuse</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q13" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">dismiss</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q13" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">figure out</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q13" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">interpret</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q13" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">argue</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q13" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">mislead</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауаптар: D) figure out; E) interpret</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Уақыт өте адамдар қоршаған ортаның ықпалын сүзгіден өткізіп, түсініп және түсіндіруді үйренеді.</p>
+<p><strong>Figure out</strong> — түсіну, мәнін анықтау. <strong>Interpret</strong> — түсіндіру, мағынасын ұғыну. Екеуі де environmental influences тіркесімен мағыналық жағынан сәйкес келеді.</p>
+<div class="synonyms">
+<strong>Жақын синонимдер:</strong><br/>
+      figure out — түсіну, анықтау<br/>
+      interpret — түсіндіру<br/>
+      understand — түсіну<br/>
+      make sense of — мағынасын ұғыну
+    </div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильные ответы: D) figure out; E) interpret</p>
+<p><strong>Перевод вопроса и ответа:</strong> Со временем люди учатся фильтровать, понимать и интерпретировать влияние окружающей среды.</p>
+<p><strong>Figure out</strong> означает понять или разобраться. <strong>Interpret</strong> — интерпретировать и осмыслить. Оба варианта подходят по смыслу.</p>
+<div class="synonyms">
+<strong>Близкие синонимы:</strong><br/>
+      figure out — понять, разобраться<br/>
+      interpret — интерпретировать<br/>
+      understand — понимать<br/>
+      make sense of — осмысливать
+    </div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="A,B,E" data-question="14">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №14</span>
+<span class="ru-text">Вопрос №14</span>
+</span>
+</div>
+<h2 class="question-text">Globally competent students are able to</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q14" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">connect local issues to global processes</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q14" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">communicate effectively with diverse audiences</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q14" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">avoid international sources of information</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q14" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">reject perspectives different from their own</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q14" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">work effectively toward a common goal</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q14" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">depend on a single cultural viewpoint</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: A) connect local issues to global processes; B) communicate effectively with diverse audiences; E) work effectively toward a common goal</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Жаһандық құзыретті студенттер жергілікті мәселелерді жаһандық үдерістермен байланыстырып, әртүрлі аудиториямен тиімді қарым-қатынас жасап, ортақ мақсатқа бірге жұмыс істей алады.</p>
+<p>Жаһандық құзыреттілік басқа көзқарастарды түсінуді, жергілікті мен жаһандықтың байланысын көруді және әртүрлі топтармен бірлесіп жұмыс істеуді қамтиды.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>global competence — жаһандық құзыреттілік<br/>diverse audiences — әртүрлі аудиториялар<br/>common goal — ортақ мақсат<br/>interconnectedness — өзара байланыс</div>
+<div class="source-note kk-text">Кітап: Unit 2, 54–55-беттер.</div><div class="source-note ru-text">Книга: Unit 2, страницы 54–55.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: A) connect local issues to global processes; B) communicate effectively with diverse audiences; E) work effectively toward a common goal</p>
+<p><strong>Перевод вопроса и ответа:</strong> Глобально компетентные студенты умеют связывать местные вопросы с глобальными процессами, эффективно общаться с разной аудиторией и работать ради общей цели.</p>
+<p>Глобальная компетентность включает понимание разных точек зрения, умение видеть связь местного и глобального и сотрудничать с различными группами.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>global competence — глобальная компетентность<br/>diverse audiences — разнообразная аудитория<br/>common goal — общая цель<br/>interconnectedness — взаимосвязанность</div>
+<div class="source-note">Книга: Unit 2, страницы 54–55.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="D,F" data-question="15">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №15</span>
+<span class="ru-text">Вопрос №15</span>
+</span>
+</div>
+<h2 class="question-text">Globalization impact education by</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q15" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">promoting uniformity and standardization in curricula worldwide</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q15" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">discouraging international collaboration in education</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q15" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">enforcing rigid national educational policies</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q15" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">fostering interconnectedness and adaptability to global trends and developments</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q15" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">limiting access to educational resources and opportunities</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q15" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">facilitating the exchange of ideas, knowledge, and technology across borders</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: D) fostering interconnectedness and adaptability to global trends and developments; F) facilitating the exchange of ideas, knowledge, and technology across borders</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Жаһандану білімге жаһандық үрдістерге бейімделу мен өзара байланысты күшейту және идеялар, білім мен технологиялардың шекарааралық алмасуын жеңілдету арқылы әсер етеді.</p>
+<p>Жаһандану білім беру мекемелерін өзара байланыстырады және білім, тәжірибе мен технология алмасуын арттырады. Сондықтан D және F білімге әсер етудің нақты оң бағыттарын сипаттайды.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>interconnectedness — өзара байланыс<br/>adaptability — бейімделгіштік<br/>exchange — алмасу<br/>across borders — шекаралар арқылы</div>
+<div class="source-note kk-text">Кітап: Unit 2–3, 54–55 және 124-беттер.</div><div class="source-note ru-text">Книга: Unit 2–3, страницы 54–55 и 124.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: D) fostering interconnectedness and adaptability to global trends and developments; F) facilitating the exchange of ideas, knowledge, and technology across borders</p>
+<p><strong>Перевод вопроса и ответа:</strong> Глобализация влияет на образование, усиливая взаимосвязанность и адаптацию к мировым тенденциям, а также облегчая обмен идеями, знаниями и технологиями через границы.</p>
+<p>Глобализация связывает образовательные учреждения и усиливает обмен знаниями, опытом и технологиями. Поэтому D и F описывают реальные направления её влияния на образование.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>interconnectedness — взаимосвязанность<br/>adaptability — адаптивность<br/>exchange — обмен<br/>across borders — через границы</div>
+<div class="source-note">Книга: Unit 2–3, страницы 54–55 и 124.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="D,H" data-question="16">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №16</span>
+<span class="ru-text">Вопрос №16</span>
+</span>
+</div>
+<h2 class="question-text">The Human Rights Council is tasked with strengthening the _________ of human rights</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q16" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">establishment</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q16" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">damage</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q16" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">safety</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q16" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">protection</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q16" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">guard</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q16" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">commitment</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q16" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">colaboration</span>
+</label>
+<label class="option" data-letter="H">
+<input name="q16" type="checkbox" value="H"/>
+<span class="letter">H</span>
+<span class="option-text">promotion</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: D) protection; H) promotion</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Адам құқықтары жөніндегі кеңес адам құқықтарын ілгерілету мен қорғауды күшейтуге міндетті.</p>
+<p>Ресми тіркес — <strong>the promotion and protection of human rights</strong>. Сондықтан екі сөз де сөйлемнің мазмұнын толық жеткізеді.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>protection — қорғау<br/>promotion — ілгерілету, қолдау<br/>strengthen — күшейту<br/>safeguard — қорғау</div>
+<div class="source-note kk-text">Кітап: Unit 2, адам құқықтары тақырыбы.</div><div class="source-note ru-text">Книга: Unit 2, тема прав человека.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: D) protection; H) promotion</p>
+<p><strong>Перевод вопроса и ответа:</strong> Совет по правам человека призван укреплять продвижение и защиту прав человека.</p>
+<p>Официальная формулировка — <strong>the promotion and protection of human rights</strong>. Поэтому оба слова передают полный смысл выражения.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>protection — защита<br/>promotion — продвижение<br/>strengthen — укреплять<br/>safeguard — охранять</div>
+<div class="source-note">Книга: Unit 2, тема прав человека.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="A,D" data-question="17">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №17</span>
+<span class="ru-text">Вопрос №17</span>
+</span>
+</div>
+<h2 class="question-text">When it comes to the development of a child, heredity encompasses _________ passed down from parents to children</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q17" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">traits</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q17" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">money</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q17" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">assets</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q17" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">qualities</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q17" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">condition</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q17" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">will</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: A) traits; D) qualities</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Баланың дамуы тұрғысынан тұқым қуалаушылық ата-анадан балаға берілетін белгілер мен қасиеттерді қамтиды.</p>
+<p><strong>Traits</strong> — тұқым арқылы берілетін белгілердің дәл атауы. <strong>Qualities</strong> осы контексте адамның қасиеттерін білдіретін жақын ұғым.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>traits — белгілер, қасиеттер<br/>qualities — қасиеттер<br/>characteristics — сипаттамалар<br/>heredity — тұқым қуалаушылық</div>
+<div class="source-note kk-text">Кітап: Unit 4, 210-бет.</div><div class="source-note ru-text">Книга: Unit 4, страница 210.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: A) traits; D) qualities</p>
+<p><strong>Перевод вопроса и ответа:</strong> В развитии ребёнка наследственность включает черты и качества, передаваемые от родителей детям.</p>
+<p><strong>Traits</strong> — точное обозначение наследуемых черт. <strong>Qualities</strong> в этом контексте является близким словом со значением человеческих качеств.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>traits — черты, признаки<br/>qualities — качества<br/>characteristics — характеристики<br/>heredity — наследственность</div>
+<div class="source-note">Книга: Unit 4, страница 210.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="B,E" data-question="18">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №18</span>
+<span class="ru-text">Вопрос №18</span>
+</span>
+</div>
+<h2 class="question-text">In the rapidly changing knowledge economy, workers must constantly acquire new _________</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q18" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">supports</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q18" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">knowledge</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q18" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">assistances</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q18" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">challengs</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q18" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">skills</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q18" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">cleverness</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауаптар: B) knowledge; E) skills</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Жылдам өзгеретін білім экономикасында қызметкерлер үнемі жаңа білім мен дағдыларды меңгеруі керек.</p>
+<p><strong>Knowledge</strong> — кәсіби ақпарат пен түсінік, ал <strong>skills</strong> — жұмысты орындауға қажетті практикалық дағдылар. Қазіргі еңбек нарығында екеуін де үнемі жаңарту қажет.</p>
+<div class="synonyms">
+<strong>Жақын сөздер мен ұғымдар:</strong><br/>
+      knowledge — білім<br/>
+      skills — дағдылар<br/>
+      competence — құзырет<br/>
+      expertise — кәсіби біліктілік
+    </div>
+<div class="source-note">Кітап: Unit 3, 115-бет.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильные ответы: B) knowledge; E) skills</p>
+<p><strong>Перевод вопроса и ответа:</strong> В быстро меняющейся экономике знаний работники должны постоянно приобретать новые знания и навыки.</p>
+<p><strong>Knowledge</strong> — профессиональные знания и информация, а <strong>skills</strong> — практические умения. Современный рынок труда требует постоянного обновления и того, и другого.</p>
+<div class="synonyms">
+<strong>Близкие слова и понятия:</strong><br/>
+      knowledge — знания<br/>
+      skills — навыки<br/>
+      competence — компетентность<br/>
+      expertise — профессиональная квалификация
+    </div>
+<div class="source-note">Книга: Unit 3, страница 115.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="E" data-question="19">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №19</span>
+<span class="ru-text">Вопрос №19</span>
+</span>
+</div>
+<h2 class="question-text">In many countries, especially in the UK asking someone directly about their income, status, weight, or age is frequently regarded as</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q19" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">polite</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q19" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">normal</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q19" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">applicable</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q19" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">appropriate</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q19" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">rude</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q19" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">usual</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q19" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">adequate</span>
+</label>
+<label class="option" data-letter="H">
+<input name="q19" type="checkbox" value="H"/>
+<span class="letter">H</span>
+<span class="option-text">acceptable</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: E) rude</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Көптеген елдерде, әсіресе Ұлыбританияда, адамның табысы, мәртебесі, салмағы немесе жасы туралы тікелей сұрау әдепсіздік болып саналады.</p>
+<p><strong>Rude</strong> — әдепсіз, орынсыз және басқа адамның жеке шекарасын елемейтін мінез-құлық. Мұндай сұрақтар жеке өмірге қатысты деп қабылданады.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>rude — әдепсіз, дөрекі<br/>impolite — сыпайы емес<br/>inappropriate — орынсыз<br/>intrusive — жеке өмірге араласатын</div>
+<div class="source-note kk-text">Кітап: Unit 4, мәдени мінез-құлық пен әдеп тақырыптары.</div><div class="source-note ru-text">Книга: Unit 4, темы культурного поведения и этикета.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: E) rude</p>
+<p><strong>Перевод вопроса и ответа:</strong> Во многих странах, особенно в Великобритании, прямой вопрос о доходе, статусе, весе или возрасте человека часто считается грубым.</p>
+<p><strong>Rude</strong> означает грубый, невежливый и нарушающий личные границы. Подобные вопросы воспринимаются как относящиеся к частной жизни.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>rude — грубый, невежливый<br/>impolite — невежливый<br/>inappropriate — неуместный<br/>intrusive — назойливый, вторгающийся в личную жизнь</div>
+<div class="source-note">Книга: Unit 4, темы культурного поведения и этикета.</div>
+</div>
+</div>
+</section>
+<section class="question-card" data-correct="A,B,E" data-question="20">
+<div class="question-head">
+<span class="question-number">
+<span class="kk-text">Сұрақ №20</span>
+<span class="ru-text">Вопрос №20</span>
+</span>
+</div>
+<h2 class="question-text">An internal migration occurs when a person or family</h2>
+<div class="options">
+<label class="option" data-letter="A">
+<input name="q20" type="checkbox" value="A"/>
+<span class="letter">A</span>
+<span class="option-text">relocates within the same country</span>
+</label>
+<label class="option" data-letter="B">
+<input name="q20" type="checkbox" value="B"/>
+<span class="letter">B</span>
+<span class="option-text">commutes from one city to another for employment</span>
+</label>
+<label class="option" data-letter="C">
+<input name="q20" type="checkbox" value="C"/>
+<span class="letter">C</span>
+<span class="option-text">crosses international borders</span>
+</label>
+<label class="option" data-letter="D">
+<input name="q20" type="checkbox" value="D"/>
+<span class="letter">D</span>
+<span class="option-text">seeks asylum in a neighboring country</span>
+</label>
+<label class="option" data-letter="E">
+<input name="q20" type="checkbox" value="E"/>
+<span class="letter">E</span>
+<span class="option-text">moves to a different state within their country for a better climate</span>
+</label>
+<label class="option" data-letter="F">
+<input name="q20" type="checkbox" value="F"/>
+<span class="letter">F</span>
+<span class="option-text">moves from country to another</span>
+</label>
+<label class="option" data-letter="G">
+<input name="q20" type="checkbox" value="G"/>
+<span class="letter">G</span>
+<span class="option-text">studies in a foreign country for their entire degree program</span>
+</label>
+</div>
+<div class="explanation">
+<div class="kk-text">
+<h3>Түсіндірме</h3>
+<p class="correct-line">Дұрыс жауап: A) relocates within the same country; E) moves to a different state within their country for a better climate</p>
+<p><strong>Сұрақ пен жауаптың аудармасы:</strong> Ішкі көші-қон адам немесе отбасы бір елдің ішінде басқа жерге, соның ішінде басқа аймаққа не штатқа көшкен кезде болады.</p>
+<p><strong>Internal migration</strong> мемлекеттік шекараны кесіп өтпей, бір елдің ішіндегі тұрақты немесе ұзақ мерзімді қоныс аударуды білдіреді. E — осы анықтаманың нақты мысалы.</p>
+<div class="synonyms"><strong>Жақын сөздер мен ұғымдар:</strong><br/>internal migration — ішкі көші-қон<br/>relocate — қоныс аудару<br/>domestic migration — ел ішіндегі көші-қон<br/>move within a country — ел ішінде көшу</div>
+<div class="source-note kk-text">Кітап: Unit 2, 70–78-беттер.</div><div class="source-note ru-text">Книга: Unit 2, страницы 70–78.</div>
+</div>
+<div class="ru-text">
+<h3>Объяснение</h3>
+<p class="correct-line">Правильный ответ: A) relocates within the same country; E) moves to a different state within their country for a better climate</p>
+<p><strong>Перевод вопроса и ответа:</strong> Внутренняя миграция происходит, когда человек или семья переезжает в пределах одной страны, в том числе в другой регион или штат.</p>
+<p><strong>Internal migration</strong> означает постоянное или длительное переселение внутри одной страны без пересечения государственной границы. Вариант E — конкретный пример такого перемещения.</p>
+<div class="synonyms"><strong>Близкие слова и понятия:</strong><br/>internal migration — внутренняя миграция<br/>relocate — переселяться<br/>domestic migration — миграция внутри страны<br/>move within a country — переехать в пределах страны</div>
+<div class="source-note">Книга: Unit 2, страницы 70–78.</div>
+</div>
+</div>
+</section>
+<div class="actions">
+<button class="action-btn check-btn" onclick="showResults()" type="button">
+<span class="kk-text">Нәтижені көрсету</span>
+<span class="ru-text">Show results</span>
+</button>
+<button class="action-btn reset-btn" onclick="resetQuiz()" type="button">
+<span class="kk-text">Қайта бастау</span>
+<span class="ru-text">Начать заново</span>
+</button>
+</div>
+<section class="result" id="finalResult">
+<div class="score">
+<div>
+<strong id="scoreNumber">0 / 40</strong>
+<span class="kk-text">Жалпы балл</span>
+<span class="ru-text">Общий балл</span>
+</div>
+</div>
+<h2 class="kk-text" id="resultTitleKk"></h2>
+<h2 class="ru-text" id="resultTitleRu"></h2>
+<p class="kk-text" id="correctCountKk"></p>
+<p class="ru-text" id="correctCountRu"></p>
+<p class="kk-text" id="messageKk"></p>
+<p class="ru-text" id="messageRu"></p>
+</section>
+</form>
+</main>
+<script>
     const totalQuestions = 20;
     const pointsPerQuestion = 2;
     let resultsShown = false;
